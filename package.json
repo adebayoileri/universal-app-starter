@@ -1,0 +1,17 @@
+{
+  "name": "rnw-starter-private",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "packageManager": "yarn@1.22.19",
+  "devDependencies": {
+    "turbo": "^2.0.4"
+  },
+  "resolutions": {
+    "react": "18.2.0",
+    "react-native": "0.74.2",
+    "react-native-web": "~0.19.10"
+  }
+}
