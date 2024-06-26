@@ -1,1 +1,1 @@
-export { Home as default } from 'app/screens/home';
+export { Home as default } from "app/screens/home";

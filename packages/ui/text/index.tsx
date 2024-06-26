@@ -1,6 +1,6 @@
 import { Text as ReactNativeText } from "react-native";
-import { cssInterop } from 'nativewind';
+import { cssInterop } from "nativewind";
 
 export const Text = cssInterop(ReactNativeText, {
-    className: 'style',
+  className: "style",
 });

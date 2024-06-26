@@ -1,4 +1,5 @@
 # Universal App Starter
+
 <img width="1725" alt="Universal App Starter Screenshot" src="https://github.com/adebayoileri/rnw-starter-private/assets/46798106/a7343cd0-81f6-4e99-9dc3-deac09c95fac">
 
 ## Get Started
@@ -39,4 +40,5 @@ yarn run build
 - [Turborepo](https://turborepo.dev/) for managing monorepo
 
 ### Author
-[Adebayo Ilerioluwa](https://github.com/adebayoileri)
+
+### [Adebayo Ilerioluwa](https://github.com/adebayoileri)
