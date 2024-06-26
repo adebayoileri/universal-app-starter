@@ -9,8 +9,6 @@
 yarn
 ```
 
-Make sure you have created a .env file with the right values, you can use .env.example as the template
-
 ## Development
 
 ```sh
@@ -34,7 +32,6 @@ yarn run build
 
 - [Expo](https://docs.expo.dev/) for native development
 - [Next.js](https://nextjs.org/) for web development
-- [React](https://reactjs.org/) for UI
 - [React Native](https://reactnative.dev/) for native development
 - [React Native Web](https://necolas.github.io/react-native-web/) for web development
 - [TypeScript](https://www.typescriptlang.org/) for static type checking
@@ -42,5 +39,4 @@ yarn run build
 - [Turborepo](https://turborepo.dev/) for managing monorepo
 
 ### Author
-
-- [Adebayo Ilerioluwa](https://github.com/adebayoileri)
+[Adebayo Ilerioluwa](https://github.com/adebayoileri)
