@@ -1,5 +1,5 @@
 {
-  "name": "rnw-starter-private",
+  "name": "universal-app-starter",
   "private": true,
   "scripts": {
     "build": "turbo run build",

@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "app": "*",
     "@expo/next-adapter": "^6.0.0",
     "next": "14.2.4",
     "react": "^18",
