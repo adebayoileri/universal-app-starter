@@ -9,12 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "ui" : "*",
     "@expo/next-adapter": "^6.0.0",
     "next": "14.2.4",
     "react": "^18",
     "react-dom": "^18",
-    "react-native-web": "^0.19.12"
+    "react-native-web": "^0.19.12",
+    "ui": "*"
   },
   "devDependencies": {
     "@types/node": "^20",
