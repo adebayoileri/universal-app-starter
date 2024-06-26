@@ -3,7 +3,7 @@
 const { withExpo } = require("@expo/next-adapter");
 
 module.exports = withExpo({
-  reactStrictMode: false, // Disable React strict mode 
+  reactStrictMode: true,
   transpilePackages: [
     // NOTE: Even though `react-native` is never used in Next.js,
     // you need to list `react-native` because `react-native-web`
