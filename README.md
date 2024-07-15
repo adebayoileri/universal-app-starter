@@ -50,6 +50,10 @@ universal-app-starter
 - [Prettier](https://prettier.io) for code formatting
 - [Turborepo](https://turborepo.dev/) build system for managing monorepo
 
+### Misc
+Interested in setting up a similar project? Check out the article [here](https://dev.to/adebayoileri/building-a-universal-react-app-with-expo-nextjs-nativewind-3829)
+
+
 ### Author
 
 #### [Adebayo Ilerioluwa](https://github.com/adebayoileri)
