@@ -51,7 +51,7 @@ universal-app-starter
 - [Turborepo](https://turborepo.dev/) build system for managing monorepo
 
 ### Misc
-Interested in setting up a similar project? Check out the article [here](https://dev.to/adebayoileri/building-a-universal-react-app-with-expo-nextjs-nativewind-3829)
+Interested in setting up a similar project from scratch? Check out the article [here](https://dev.to/adebayoileri/building-a-universal-react-app-with-expo-nextjs-nativewind-3829)
 
 
 ### Author
