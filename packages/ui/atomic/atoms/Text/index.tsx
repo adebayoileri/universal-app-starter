@@ -4,3 +4,5 @@ import { cssInterop } from "nativewind";
 export const Text = cssInterop(ReactNativeText, {
   className: "style",
 });
+
+export type TextProps = ReactNativeText["props"];

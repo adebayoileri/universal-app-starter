@@ -1,8 +1,8 @@
-import { Text } from "ui/text";
-import { View } from "ui/view";
+import { Text, View } from "ui/atomic";
+
 export function Home() {
   return (
-    <View className="flex flex-1 justify-center items-center">
+    <View className="flex items-center justify-center flex-1">
       <Text className="text-base">
         Edit{" "}
         <Text className="text-base font-bold">
