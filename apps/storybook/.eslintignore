@@ -1,0 +1,8 @@
+scripts
+coverage
+.vscode
+node_modules
+dist
+jest.config.js
+jest-setup.js
+node_modules

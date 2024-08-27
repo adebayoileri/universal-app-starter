@@ -1,0 +1,37 @@
+html,
+body,
+#root {
+  height: 100%;
+  padding: 0 !important;
+}
+
+#root {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+@font-face {
+  font-family: 'Quicksand-Light';
+  src: url('./fonts/Quicksand-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Quicksand-Regular';
+  src: url('./fonts/Quicksand-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Quicksand-Medium';
+  src: url('./fonts/Quicksand-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Quicksand-SemiBold';
+  src: url('./fonts/Quicksand-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Quicksand-Bold';
+  src: url('./fonts/Quicksand-Bold.ttf') format('truetype');
+}

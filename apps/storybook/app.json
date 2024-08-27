@@ -1,0 +1,22 @@
+{
+  "expo": {
+    "name": "AwesomeStorybook",
+    "slug": "AwesomeStorybook",
+    "plugins": [
+      "expo-router",
+      "expo-localization",
+      [
+        "expo-font",
+        {
+          "fonts": [
+            "./assets/fonts/Quicksand-Bold.ttf",
+            "./assets/fonts/Quicksand-Light.ttf",
+            "./assets/fonts/Quicksand-Medium.ttf",
+            "./assets/fonts/Quicksand-Regular.ttf",
+            "./assets/fonts/Quicksand-SemiBold.ttf"
+          ]
+        }
+      ]
+    ]
+  }
+}

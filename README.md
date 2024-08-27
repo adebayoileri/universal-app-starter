@@ -3,6 +3,7 @@
 <img width="1725" alt="Universal App Starter Screenshot" src="https://github.com/adebayoileri/rnw-starter-private/assets/46798106/a7343cd0-81f6-4e99-9dc3-deac09c95fac">
 
 ## Get Started
+
 **Must have Node and Yarn(v1.22.19) installed to setup locally**
 
 ```sh
@@ -22,16 +23,20 @@ yarn run build
 ```
 
 ### Folder Structure
+
 This monorepo consists of the two workspaces `apps` & `packages`
+
 ```bash
 universal-app-starter
 └── apps
-    ├── native 
+    ├── native
     └── web
+    └── storybook
 └── packages
-    ├── ui 
+    ├── ui
     └── app
 ```
+
 ### Apps and Packages
 
 - `apps/native`: a [react-native](https://reactnative.dev/) app built with [expo](https://docs.expo.dev/)
@@ -51,8 +56,8 @@ universal-app-starter
 - [Turborepo](https://turborepo.dev/) build system for managing monorepo
 
 ### Misc
-Interested in setting up a similar project from scratch? Check out the article [here](https://dev.to/adebayoileri/building-a-universal-react-app-with-expo-nextjs-nativewind-3829)
 
+Interested in setting up a similar project from scratch? Check out the article [here](https://dev.to/adebayoileri/building-a-universal-react-app-with-expo-nextjs-nativewind-3829)
 
 ### Author
 
