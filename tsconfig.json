@@ -5,7 +5,8 @@
       "baseUrl": "./packages",
       "paths": {
         "ui/*": ["./ui/*"],
-        "app/*": ["./app/*"]
+        "app/*": ["./app/*"],
+        "@/*": ["*"]
       },
       "jsx": "react-jsx"
     },

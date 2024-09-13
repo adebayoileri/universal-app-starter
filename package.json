@@ -21,5 +21,27 @@
     "react-native": "0.74.2",
     "react-native-web": "~0.19.10",
     "tailwindcss": "^3.4.1"
+  },
+  "dependencies": {
+    "@radix-ui/react-tabs": "^1.1.0",
+    "@react-native-async-storage/async-storage": "^2.0.0",
+    "@tanstack/react-query": "^5.55.4",
+    "@types/file-saver": "^2.0.7",
+    "add": "^2.0.6",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
+    "expo-camera": "^15.0.15",
+    "expo-media-library": "^16.0.4",
+    "file-saver": "^2.0.5",
+    "framer-motion": "^11.5.4",
+    "react-countdown-circle-timer": "^3.2.1",
+    "react-infinite-scroll-component": "^6.1.0",
+    "react-native-countdown-circle-timer": "^3.2.1",
+    "react-native-svg": "^15.6.0",
+    "react-webcam": "^7.2.0",
+    "tailwind-merge": "^2.5.2",
+    "tailwindcss-animate": "^1.0.7",
+    "yarn": "^1.22.22",
+    "zustand": "^4.5.5"
   }
 }

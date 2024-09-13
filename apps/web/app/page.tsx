@@ -1,3 +1,6 @@
 "use client";
 
-export { Home as default } from "app/screens/home";
+export { SplashScreen as default } from "app/screens/splash_screen/splash_screen.web";
+
+
+
