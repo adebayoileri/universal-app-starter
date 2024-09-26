@@ -13,7 +13,9 @@
   ],
   "packageManager": "yarn@1.22.19",
   "devDependencies": {
+    "clsx": "^2.1.1",
     "prettier": "^3.3.2",
+    "tailwind-merge": "^2.5.2",
     "turbo": "^2.0.4"
   },
   "resolutions": {
