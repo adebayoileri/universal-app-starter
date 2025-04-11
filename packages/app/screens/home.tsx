@@ -5,7 +5,7 @@ export function Home() {
     <View className="flex flex-1 justify-center items-center">
       <Text className="text-base">
         Edit{" "}
-        <Text className="text-base font-bold">
+        <Text className="text-2xl font-bold">
           {" "}
           packages/app/screens/home.tsx
         </Text>{" "}
