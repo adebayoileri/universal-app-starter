@@ -1,2 +1,2 @@
 "use client"; // Home is a rnw component and  w/o use client it's broken
-export { Home as default } from "app/screens/home";
+export { About as default } from "app/screens/profile";

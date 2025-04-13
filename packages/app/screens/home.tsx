@@ -1,16 +1,22 @@
-import { Text } from "ui/text";
+import { ScrollView } from "ui/scroll-view";
+import CompanyCard from "app/components/company/CompanyCard";
 import { View } from "ui/view";
+import { Link } from "ui/link";
+
 export function Home() {
   return (
-    <View className="flex flex-1 justify-center items-center">
-      <Text className="text-base">
-        Edit{" "}
-        <Text className="text-2xl font-bold">
-          {" "}
-          packages/app/screens/home.tsx
-        </Text>{" "}
-        to edit this screen.
-      </Text>
-    </View>
+    <ScrollView className="flex w-screen">
+      <View className="flex flex-col sm:flex-row flex-wrap gap-4 sm:p-4 sm:gap-10">
+        <Link to="/profile">
+          <CompanyCard />
+        </Link>
+        <Link to="/profile">
+          <CompanyCard />
+        </Link>
+        <Link to="/profile">
+          <CompanyCard />
+        </Link>
+      </View>
+    </ScrollView>
   );
 }

@@ -1,4 +1,4 @@
-"use client"; // opting out of rsc till this is fixed: https://github.com/necolas/react-native-web/discussions/2474
+// "use client"; // opting out of rsc till this is fixed: https://github.com/necolas/react-native-web/discussions/2474
 import { Inter } from "next/font/google";
 import "./globals.css";
 
