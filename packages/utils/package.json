@@ -1,0 +1,12 @@
+{
+  "name": "scripts",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "ts-node generate-category-data.ts",
+    "generate": "ts-node generate-category-data.ts"
+  },
+  "peerDependencies": {
+    "typescript": "*",
+    "ts-node": "*"
+  }
+}

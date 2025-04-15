@@ -1,4 +1,3 @@
-import { ScrollView } from "ui/scroll-view";
 import { Image } from "ui/image";
 import { View } from "ui/view";
 import { Platform } from "react-native";

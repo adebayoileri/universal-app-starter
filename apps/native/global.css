@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  :root {
+    --font-dmsans: "DMSans";
+  }
+}
+
+body {
+  font-family: var(--font-dmsans);
+}

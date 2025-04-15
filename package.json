@@ -5,7 +5,8 @@
     "build": "turbo run build",
     "dev": "turbo run dev",
     "clean": "turbo run clean && rm -rf node_modules",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "generate": "cd packages/utils && ts-node generate-category-data.ts"
   },
   "workspaces": [
     "apps/*",
@@ -16,7 +17,9 @@
     "clsx": "^2.1.1",
     "prettier": "^3.3.2",
     "tailwind-merge": "^2.5.2",
-    "turbo": "^2.0.4"
+    "ts-node": "^10.9.2",
+    "turbo": "^2.0.4",
+    "typescript": "^5.8.3"
   },
   "resolutions": {
     "react": "18.2.0",

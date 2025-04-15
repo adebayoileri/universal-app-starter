@@ -7,7 +7,7 @@ import { cn } from "ui/utils/cn";
 import React from "react";
 
 interface ViewProps extends RNViewProps {
-  children: React.ReactNode;
+  children?: React.ReactNode;
   className?: string;
 }
 

@@ -1,17 +1,25 @@
 {
-    "$schema": "https://turbo.build/schema.json",
-    "tasks": {
-      "build": {
-        "outputs": [".next/**", "!.next/cache/**"],
-        "dependsOn": ["^build"]
-      },
-      "dev": {
-        "cache": false,
-        "persistent": true
-      },
-      "lint": {},
-      "clean": {
-        "cache": false
-      }
+  "$schema": "https://turbo.build/schema.json",
+  "tasks": {
+    "build": {
+      "outputs": [
+        ".next/**",
+        "!.next/cache/**",
+        "packages/app/assets/generated/**"
+      ],
+      "dependsOn": ["^build", "generate"]
+    },
+    "dev": {
+      "cache": false,
+      "persistent": true,
+      "dependsOn": ["generate"]
+    },
+    "lint": {},
+    "clean": {
+      "cache": false
+    },
+    "generate": {
+      "cache": false
     }
   }
+}

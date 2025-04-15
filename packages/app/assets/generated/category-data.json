@@ -1,0 +1,129 @@
+[
+  {
+    "category": {
+      "id": "dried_fruits_&_nuts",
+      "name": "dried fruits & nuts",
+      "source": {
+        "web": "assets/kmgRobust/categories/dried_fruits_&_nuts.png",
+        "native": "../../../assets/kmgRobust/categories/dried_fruits_&_nuts.png"
+      }
+    },
+    "products": [
+      {
+        "id": "black_pepper",
+        "name": "black pepper",
+        "source": {
+          "web": "assets/kmgRobust/dried_fruits_&_nuts/black_pepper.png",
+          "native": "../../../assets/kmgRobust/dried_fruits_&_nuts/black_pepper.png"
+        }
+      },
+      {
+        "id": "cloves",
+        "name": "cloves",
+        "source": {
+          "web": "assets/kmgRobust/dried_fruits_&_nuts/cloves.png",
+          "native": "../../../assets/kmgRobust/dried_fruits_&_nuts/cloves.png"
+        }
+      },
+      {
+        "id": "white_pepper",
+        "name": "white pepper",
+        "source": {
+          "web": "assets/kmgRobust/dried_fruits_&_nuts/white_pepper.png",
+          "native": "../../../assets/kmgRobust/dried_fruits_&_nuts/white_pepper.png"
+        }
+      }
+    ]
+  },
+  {
+    "category": {
+      "id": "dry_spices",
+      "name": "dry spices",
+      "source": {
+        "web": "assets/kmgRobust/categories/dry_spices.png",
+        "native": "../../../assets/kmgRobust/categories/dry_spices.png"
+      }
+    },
+    "products": [
+      {
+        "id": "black_pepper",
+        "name": "black pepper",
+        "source": {
+          "web": "assets/kmgRobust/dry_spices/black_pepper.png",
+          "native": "../../../assets/kmgRobust/dry_spices/black_pepper.png"
+        }
+      },
+      {
+        "id": "cloves",
+        "name": "cloves",
+        "source": {
+          "web": "assets/kmgRobust/dry_spices/cloves.png",
+          "native": "../../../assets/kmgRobust/dry_spices/cloves.png"
+        }
+      },
+      {
+        "id": "white_pepper",
+        "name": "white pepper",
+        "source": {
+          "web": "assets/kmgRobust/dry_spices/white_pepper.png",
+          "native": "../../../assets/kmgRobust/dry_spices/white_pepper.png"
+        }
+      }
+    ]
+  },
+  {
+    "category": {
+      "id": "grains_&_cereals",
+      "name": "grains & cereals",
+      "source": {
+        "web": "assets/kmgRobust/categories/grains_&_cereals.png",
+        "native": "../../../assets/kmgRobust/categories/grains_&_cereals.png"
+      }
+    },
+    "products": []
+  },
+  {
+    "category": {
+      "id": "herbs_&_dehydrates",
+      "name": "herbs & dehydrates",
+      "source": {
+        "web": "assets/kmgRobust/categories/herbs_&_dehydrates.png",
+        "native": "../../../assets/kmgRobust/categories/herbs_&_dehydrates.png"
+      }
+    },
+    "products": []
+  },
+  {
+    "category": {
+      "id": "organic",
+      "name": "organic",
+      "source": {
+        "web": "assets/kmgRobust/categories/organic.png",
+        "native": "../../../assets/kmgRobust/categories/organic.png"
+      }
+    },
+    "products": []
+  },
+  {
+    "category": {
+      "id": "pulses",
+      "name": "pulses",
+      "source": {
+        "web": "assets/kmgRobust/categories/pulses.png",
+        "native": "../../../assets/kmgRobust/categories/pulses.png"
+      }
+    },
+    "products": []
+  },
+  {
+    "category": {
+      "id": "seeds",
+      "name": "seeds",
+      "source": {
+        "web": "assets/kmgRobust/categories/seeds.png",
+        "native": "../../../assets/kmgRobust/categories/seeds.png"
+      }
+    },
+    "products": []
+  }
+]

@@ -4,6 +4,8 @@ import {
   ScrollViewProps,
   RefreshControl,
   RefreshControlProps,
+  ViewStyle,
+  StyleProp,
 } from "react-native";
 import { cssInterop } from "nativewind";
 import { cn } from "ui/utils/cn";
@@ -14,10 +16,10 @@ cssInterop(RNScrollView, {
 
 interface CustomScrollViewProps extends ScrollViewProps {
   className?: string;
-  contentContainerClassName?: string;
   refreshControlProps?: RefreshControlProps;
   refreshing?: boolean;
   onRefresh?: () => void;
+  contentContainerStyle?: StyleProp<ViewStyle>;
 }
 
 export const ScrollView = forwardRef<
@@ -27,21 +29,20 @@ export const ScrollView = forwardRef<
   (
     {
       className,
-      contentContainerClassName,
       refreshing = false,
       onRefresh,
       refreshControlProps,
       children,
+      contentContainerStyle,
       ...props
     },
     ref,
   ) => {
-    // Render refresh control only if onRefresh is provided
     const refreshControl = onRefresh ? (
       <RefreshControl
         refreshing={refreshing}
         onRefresh={onRefresh}
-        colors={["#3b82f6"]} // Tailwind blue-500
+        colors={["#3b82f6"]}
         tintColor="#3b82f6"
         {...refreshControlProps}
       />
@@ -51,14 +52,12 @@ export const ScrollView = forwardRef<
       <RNScrollView
         ref={ref}
         className={cn(className)}
-        contentContainerClassName={cn(
-          "flex-grow", // Ensure content can grow
-          contentContainerClassName,
-        )}
         refreshControl={refreshControl}
         showsVerticalScrollIndicator={false}
         showsHorizontalScrollIndicator={false}
+        overScrollMode="never"
         {...props}
+        contentContainerStyle={contentContainerStyle}
       >
         {children}
       </RNScrollView>
