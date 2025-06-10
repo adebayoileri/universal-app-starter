@@ -19,6 +19,7 @@ module.exports = withExpo({
     // you need to list `react-native` because `react-native-web` is aliased to `react-native`.
     "react-native",
     "react-native-web",
+    "expo",
     "ui",
     "nativewind",
     "react-native-css-interop",

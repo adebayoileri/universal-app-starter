@@ -1,5 +1,6 @@
 import { Text } from "ui/text";
 import { View } from "ui/view";
+import { Link } from "ui/link";
 
 export function Home() {
   return (
@@ -12,6 +13,14 @@ export function Home() {
         </Text>{" "}
         to edit this screen.
       </Text>
+
+      <Link href="/auth/mobile-login">
+        <Text>mobile no login</Text>
+      </Link>
+
+      <Link href="/auth/password-login">
+        <Text>password login</Text>
+      </Link>
     </View>
   );
 }
