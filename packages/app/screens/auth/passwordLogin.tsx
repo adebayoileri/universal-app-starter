@@ -1,16 +1,11 @@
 import { Text } from "ui/text";
 import { View } from "ui/view";
 
-export function Home() {
+export function PasswordLogin() {
   return (
     <View className="flex flex-1 justify-center items-center">
       <Text className="text-base">
-        Edit{" "}
-        <Text className="text-base font-bold">
-          {" "}
-          packages/app/screens/home.tsx
-        </Text>{" "}
-        to edit this screen.
+        密码登录
       </Text>
     </View>
   );
