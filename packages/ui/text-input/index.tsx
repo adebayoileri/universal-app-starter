@@ -32,6 +32,3 @@ export const TextInput = React.forwardRef<React.ElementRef<typeof ReactNativeTex
 )
 
 TextInput.displayName = "TextInput";
-
-
-
