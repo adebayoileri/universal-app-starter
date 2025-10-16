@@ -7,6 +7,14 @@
 
 ```sh
 yarn
+# or if you encounter issues with yarn
+npm install --legacy-peer-deps
+```
+
+**Note:** After installation, clear Metro cache before running the native app:
+```sh
+cd apps/native
+npx expo start --clear
 ```
 
 ## Development
@@ -45,7 +53,7 @@ universal-app-starter
 - [Next.js](https://nextjs.org/) for web development
 - [React Native](https://reactnative.dev/) for native development
 - [React Native Web](https://necolas.github.io/react-native-web/) for web development
-- [NativeWind](https://www.nativewind.dev/) styling solution for native
+- [NativeWind v5](https://www.nativewind.dev/v5) with [Tailwind CSS v4](https://tailwindcss.com/) for unified styling across platforms
 - [TypeScript](https://www.typescriptlang.org/) for static type checking
 - [Prettier](https://prettier.io) for code formatting
 - [Turborepo](https://turborepo.dev/) build system for managing monorepo

@@ -8,7 +8,6 @@ const config: Config = {
     "../../packages/**/*.{js,ts,jsx,tsx}",
   ],
   important: "html",
-  presets: [require("nativewind/preset")],
   theme: {
     extend: {},
   },

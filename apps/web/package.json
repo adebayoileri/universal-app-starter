@@ -18,14 +18,15 @@
     "ui": "*"
   },
   "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.0",
     "@types/node": "^20",
     "@types/react": "19.2.2",
     "@types/react-dom": "19.2.1",
     "eslint": "^8",
     "eslint-config-next": "15.5.4",
-    "postcss": "^8",
+    "postcss": "^8.4.49",
     "prettier": "^3.3.2",
-    "tailwindcss": "^3.4.1",
+    "tailwindcss": "^4.1.0",
     "typescript": "^5"
   },
   "overrides": {
