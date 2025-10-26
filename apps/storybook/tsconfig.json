@@ -1,0 +1,22 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "paths": {
+      "ui": ["../../packages/ui/index.ts"],
+      "ui/*": ["../../packages/ui/*"],
+      "app": ["../../packages/app/index.ts"],
+      "app/*": ["../../packages/app/*"]
+    }
+  },
+  "include": ["**/*.ts", "**/*.tsx", ".storybook/**/*"],
+  "exclude": ["node_modules"]
+}

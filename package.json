@@ -4,6 +4,8 @@
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev",
+    "storybook": "yarn workspace storybook dev",
+    "storybook:build": "yarn workspace storybook build",
     "clean": "turbo run clean && rm -rf node_modules",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
@@ -22,6 +24,8 @@
     "react": "18.2.0",
     "react-native": "0.74.2",
     "react-native-web": "~0.19.10",
-    "tailwindcss": "^3.4.1"
+    "tailwindcss": "^3.4.1",
+    "@types/react": "18.2.0",
+    "@types/react-dom": "18.2.0"
   }
 }
