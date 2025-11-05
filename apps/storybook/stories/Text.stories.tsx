@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from "@storybook/react";
+import type { Meta, StoryObj } from "@storybook/react-vite";
 import { Text } from "ui/text";
 
 const meta = {
@@ -50,7 +50,7 @@ export const Truncated: Story = {
   args: {
     children:
       "This is a very long text that will be truncated after one line to demonstrate the numberOfLines prop functionality",
-    numberOfLines: 1,
+    numberOfLines: 5,
     className: "max-w-xs",
   },
 };
