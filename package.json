@@ -9,10 +9,16 @@
     "clean": "turbo run clean && rm -rf node_modules",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
-  "workspaces": [
-    "apps/*",
-    "packages/*"
-  ],
+  "workspaces": {
+    "packages": [
+      "apps/*",
+      "packages/*"
+    ],
+    "nohoist": [
+      "**/storybook/**",
+      "**/storybook"
+    ]
+  },
   "packageManager": "yarn@1.22.19",
   "devDependencies": {
     "clsx": "^2.1.1",
@@ -27,5 +33,12 @@
     "tailwindcss": "^3.4.1",
     "@types/react": "18.2.0",
     "@types/react-dom": "18.2.0"
+  },
+  "volta": {
+    "node": "20.19.5"
+  },
+  "dependencies": {
+    "@storybook/react-native-web-vite": "^10.0.4",
+    "vite": "^7.1.12"
   }
 }

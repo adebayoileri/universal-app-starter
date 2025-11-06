@@ -1,5 +1,10 @@
-import type { StorybookConfig } from "@storybook/react-webpack5";
-import path from "path";
+// This file has been automatically migrated to valid ESM format by Storybook.
+import { fileURLToPath } from "node:url";
+import type { StorybookConfig } from "@storybook/react-vite";
+import path, { dirname } from "path";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 const config: StorybookConfig = {
   stories: [
@@ -7,85 +12,91 @@ const config: StorybookConfig = {
     "../stories/**/*.stories.@(js|jsx|mjs|ts|tsx)",
   ],
   addons: [
-    "@storybook/addon-webpack5-compiler-swc",
-    "@storybook/addon-onboarding",
-    "@storybook/addon-links",
-    "@storybook/addon-essentials",
-    "@storybook/addon-interactions",
+    getAbsolutePath("@storybook/addon-onboarding"),
+    getAbsolutePath("@storybook/addon-links"),
+    getAbsolutePath("@storybook/addon-docs"),
   ],
   framework: {
-    name: "@storybook/react-webpack5",
-    options: {},
+    name: getAbsolutePath("@storybook/react-native-web-vite"),
+    options: {
+      builder: {
+        viteConfigPath: undefined,
+      },
+    },
   },
-  webpackFinal: async (config) => {
-    // Add alias for react-native to react-native-web
+  async viteFinal(config) {
+    const tailwindcss = (await import('tailwindcss')).default;
+    const autoprefixer = (await import('autoprefixer')).default;
+
+    // Configure aliases for react-native-web
     config.resolve = config.resolve || {};
     config.resolve.alias = {
-      ...(config.resolve.alias || {}),
+      ...config.resolve.alias,
       "react-native$": "react-native-web",
+      "react-native-web": "react-native-web",
     };
 
-    // Add extensions
+    // Add extension handling
     config.resolve.extensions = [
       ".web.tsx",
-      ".web.ts",
+      ".web.ts", 
       ".web.jsx",
       ".web.js",
       ".tsx",
       ".ts",
-      ".jsx",
+      ".jsx", 
       ".js",
       ...(config.resolve.extensions || []),
     ];
 
-    config.module = config.module || {};
-    config.module.rules = config.module.rules || [];
-
-    // Add babel-loader for nativewind and react-native-css-interop with proper CommonJS handling
-    config.module.rules.push({
-      test: /\.(js|jsx|ts|tsx)$/,
-      include: [
-        path.resolve(__dirname, "../../../node_modules/nativewind"),
-        path.resolve(
-          __dirname,
-          "../../../node_modules/react-native-css-interop",
-        ),
+    // Ensure CSS is properly processed with Tailwind
+    config.css = config.css || {};
+    config.css.postcss = {
+      plugins: [
+        tailwindcss({
+          config: path.resolve(__dirname, '../tailwind.config.js'),
+        }),
+        autoprefixer,
       ],
-      use: {
-        loader: "babel-loader",
-        options: {
-          presets: [
-            [
-              "@babel/preset-env",
-              {
-                modules: "auto",
-                targets: { browsers: ["last 2 versions"] },
-              },
-            ],
-            ["@babel/preset-react", { runtime: "automatic" }],
-            "@babel/preset-typescript",
-          ],
-          plugins: ["@babel/plugin-transform-modules-commonjs"],
-        },
+    };
+
+    // Configure for NativeWind web support
+    config.define = {
+      ...config.define,
+      'process.env.EXPO_PUBLIC_USE_STATIC': JSON.stringify('true'),
+      '__DEV__': JSON.stringify(process.env.NODE_ENV !== 'production'),
+    };
+
+    // Optimize dependencies for NativeWind
+    config.optimizeDeps = config.optimizeDeps || {};
+    config.optimizeDeps.include = [
+      ...(config.optimizeDeps.include || []),
+      'nativewind',
+      'react-native-css-interop',
+      'react-native-web',
+      'react-native-web/dist/exports/StyleSheet',
+    ];
+
+    config.optimizeDeps.exclude = [
+      ...(config.optimizeDeps.exclude || []),
+    ];
+
+    // Add NativeWind's Vite transform
+    config.plugins = config.plugins || [];
+    
+    // Add transform for react-native-css-interop
+    config.plugins.push({
+      name: 'nativewind-transform',
+      transform(code, id) {
+        // Transform cssInterop calls for web
+        if (id.includes('node_modules')) return null;
+        if (!code.includes('cssInterop')) return null;
+        
+        return {
+          code: code,
+          map: null,
+        };
       },
-    });
-
-    // Handle SVG
-    const fileLoaderRule = config.module?.rules?.find(
-      (rule) =>
-        rule &&
-        typeof rule !== "string" &&
-        rule.test instanceof RegExp &&
-        rule.test.test(".svg"),
-    );
-
-    if (fileLoaderRule && typeof fileLoaderRule !== "string") {
-      fileLoaderRule.exclude = /\.svg$/;
-    }
-
-    config.module.rules.push({
-      test: /\.svg$/,
-      use: ["@svgr/webpack"],
     });
 
     return config;
@@ -94,3 +105,7 @@ const config: StorybookConfig = {
 };
 
 export default config;
+
+function getAbsolutePath(value: string): any {
+  return dirname(fileURLToPath(import.meta.resolve(`${value}/package.json`)));
+}
